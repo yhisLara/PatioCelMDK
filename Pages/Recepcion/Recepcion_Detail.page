@@ -1,0 +1,140 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/PatioCelulosaApp/Services/PatioCelulosa_Destination.service",
+		"EntitySet": "Recepcion",
+		"QueryOptions": ""
+	},
+	"Controls": [
+		{
+			"DataSubscriptions": [],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable",
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Footnote": "{modifiedAt}",
+						"Description": "{patente}",
+						"StatusText": "{producto}",
+						"Tags": [],
+						"HeadlineText": "{ruma}",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading",
+						"Labels": []
+					},
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
+					"Visible": true
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "InicioFin",
+							"IsVisible": true,
+							"Separator": true,
+							"Title": "Iniciar Descarga",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"ImagePosition": "Leading",
+							"Enabled": true,
+							"OnPress": "/PatioCelulosaApp/Rules/Descarga/InicioDescarga.js"
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell1"
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"Value": 1,
+							"_Type": "Control.Type.FormCell.DurationPicker",
+							"_Name": "FormCellDurationPicker0",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Duration",
+							"MinuteInterval": 5,
+							"IsEditable": true,
+							"Unit": "H"
+						},
+						{
+							"_Type": "Control.Type.FormCell.SegmentedControl",
+							"_Name": "Rumas1",
+							"IsVisible": true,
+							"Separator": false,
+							"Caption": "Rula real asignada",
+							"IsEditable": true,
+							"ApportionsSegmentWidthsByContent": false,
+							"Segments": [
+								"1",
+								"2",
+								"3",
+								"4",
+								"5",
+								"6",
+								"7",
+								"8",
+								"9",
+								"10"
+							]
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "DetalleRecepcion",
+	"Caption": "Detalle",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "",
+				"SystemItem": "Edit",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"OnPress": "/PatioCelulosaApp/Actions/Recepcion/NavToRecepcion_Edit.action"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "",
+				"SystemItem": "Trash",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"OnPress": "/PatioCelulosaApp/Rules/Recepcion/Recepcion_DeleteConfirmation.js"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

@@ -1,0 +1,172 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/PatioCelulosaApp/Services/PatioCelulosa_Destination.service",
+		"EntitySet": "Descarga",
+		"QueryOptions": ""
+	},
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Value": "{rumaAsignada}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "rumaAsignada",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "rumaAsignada",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "{rumaReal}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "rumaReal",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "rumaReal",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "{patenteCamion}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "patenteCamion",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "patenteCamion",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "{sigla}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "sigla",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "sigla",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "{horaFinDescarga}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "horaIniDescarga",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "horaIniDescarga",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "{horaFinDescarga}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty0",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "horaFinDescarga",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "{fecha}",
+							"_Type": "Control.Type.FormCell.DatePicker",
+							"_Name": "fecha",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "fecha",
+							"IsEditable": true,
+							"Mode": "Datetime"
+						},
+						{
+							"Value": "{patenteGrua}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "patenteGrua",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "patenteGrua",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "{giro}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "giro",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "giro",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "{producto}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "producto",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "producto",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "{estado}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "estado",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "estado",
+							"Enabled": true,
+							"IsEditable": true
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				}
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Descarga_Edit",
+	"Caption": "Update Descarga Detail",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "",
+				"SystemItem": "Cancel",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"OnPress": "/PatioCelulosaApp/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "",
+				"SystemItem": "Save",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"OnPress": "/PatioCelulosaApp/Actions/Descarga/Descarga_UpdateEntity.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

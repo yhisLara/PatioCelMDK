@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.ProgressBanner",
+	"OnSuccess": "/PatioCelulosaApp/Actions/Descarga/AppTimeOutDescarga.action",
+	"Message": "Descargando Camión..",
+	"CompletionTimeout": 0,
+	"Animated": true,
+	"ActionLabel": "Cancelar",
+	"DismissBannerOnAction": false
+}

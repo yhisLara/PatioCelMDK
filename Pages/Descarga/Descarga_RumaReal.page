@@ -1,0 +1,89 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.Sorter",
+							"_Name": "rumaReal",
+							"IsVisible": true,
+							"Separator": true,
+							"AllowEmptySelection": true,
+							"Caption": "Ruma real asignada",
+							"IsEditable": true,
+							"SortByItems": [
+								{
+									"DisplayValue": "1",
+									"ReturnValue": "1"
+								},
+								{
+									"DisplayValue": "2",
+									"ReturnValue": "2"
+								},
+								{
+									"DisplayValue": "3",
+									"ReturnValue": "3"
+								},
+								{
+									"DisplayValue": "4",
+									"ReturnValue": ""
+								},
+								{
+									"DisplayValue": "5",
+									"ReturnValue": "5"
+								},
+								{
+									"DisplayValue": "6",
+									"ReturnValue": "6"
+								},
+								{
+									"DisplayValue": "7",
+									"ReturnValue": "7"
+								},
+								{
+									"DisplayValue": "8",
+									"ReturnValue": "8"
+								},
+								{
+									"DisplayValue": "9",
+									"ReturnValue": "9"
+								},
+								{
+									"DisplayValue": "10",
+									"ReturnValue": "10"
+								}
+							]
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Descarga_RumaReal",
+	"Caption": "Asignar ruma real",
+	"PrefersLargeCaption": true,
+	"Result": [
+		"#Page:Descarga_RumaReal/#Control:rumaReal/#Value"
+	]
+}

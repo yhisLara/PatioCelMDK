@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.ApplicationUpdate",
+	"ActionResult": {
+		"_Name": "AppTimeOutDescarga"
+	},
+	"OnSuccess": "/PatioCelulosaApp/Rules/Descarga/TimeOut.js"
+}

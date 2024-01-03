@@ -1,0 +1,13 @@
+{
+    "Target": {
+        "EntitySet": "Parametro",
+        "Service": "/PatioCelulosaApp/Services/PatioCelulosa_Destination.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "OnSuccess": "/PatioCelulosaApp/Actions/DeleteEntitySuccessMessage.action",
+    "OnFailure": "/PatioCelulosaApp/Actions/DeleteEntityFailureMessage.action",
+    "ActionResult": {
+        "_Name": "delete"
+    },
+    "_Type": "Action.Type.ODataService.DeleteEntity"
+}

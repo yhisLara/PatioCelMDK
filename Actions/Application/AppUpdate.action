@@ -1,0 +1,8 @@
+{
+    "_Type": "Action.Type.ApplicationUpdate",
+    "ActionResult": {
+        "_Name": "AppUpdate"
+    },
+    "OnFailure": "/PatioCelulosaApp/Rules/Application/AppUpdateFailure.js",
+    "OnSuccess": "/PatioCelulosaApp/Rules/Application/AppUpdateSuccess.js"
+}

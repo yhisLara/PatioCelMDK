@@ -1,0 +1,61 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/PatioCelulosaApp/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel"
+			},
+			{
+				"OnPress": "/PatioCelulosaApp/Actions/Parametro/Parametro_CreateEntity.action",
+				"Position": "Right",
+				"SystemItem": "Save"
+			}
+		]
+	},
+	"Caption": "Create Parametro Detail",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "param",
+							"_Name": "param",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "valor",
+							"_Name": "valor",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "glosa",
+							"_Name": "glosa",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "descripcion",
+							"_Name": "descripcion",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "vigente",
+							"Caption": "vigente",
+							"Value": false,
+							"_Type": "Control.Type.FormCell.Switch"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Parametro_Create",
+	"PrefersLargeCaption": true
+}

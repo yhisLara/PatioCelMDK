@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.ProgressBanner",
+	"OnSuccess": "/PatioCelulosaApp/Actions/Application/AppUpdate.action",
+	"Message": "Check for update..",
+	"CompletionTimeout": 3,
+	"Animated": true
+}

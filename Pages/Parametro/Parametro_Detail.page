@@ -1,0 +1,96 @@
+{
+	"Caption": "Parametro Detail",
+	"DesignTimeTarget": {
+		"Service": "/PatioCelulosaApp/Services/PatioCelulosa_Destination.service",
+		"EntitySet": "Parametro",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/PatioCelulosaApp/Actions/Parametro/NavToParametro_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit"
+			},
+			{
+				"OnPress": "/PatioCelulosaApp/Rules/Parametro/Parametro_DeleteConfirmation.js",
+				"Position": "Right",
+				"SystemItem": "Trash"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{ID}",
+						"Subhead": "{createdAt}",
+						"BodyText": "",
+						"Footnote": "{modifiedAt}",
+						"Description": "{createdBy}",
+						"StatusText": "{modifiedBy}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{param}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "Created On",
+							"Value": "{createdAt}"
+						},
+						{
+							"KeyName": "Created By",
+							"Value": "{createdBy}"
+						},
+						{
+							"KeyName": "Changed On",
+							"Value": "{modifiedAt}"
+						},
+						{
+							"KeyName": "Changed By",
+							"Value": "{modifiedBy}"
+						},
+						{
+							"KeyName": "param",
+							"Value": "{param}"
+						},
+						{
+							"KeyName": "valor",
+							"Value": "{valor}"
+						},
+						{
+							"KeyName": "glosa",
+							"Value": "{glosa}"
+						},
+						{
+							"KeyName": "descripcion",
+							"Value": "{descripcion}"
+						},
+						{
+							"KeyName": "vigente",
+							"Value": "{vigente}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Parametro_Detail",
+	"PrefersLargeCaption": true
+}

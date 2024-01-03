@@ -1,0 +1,91 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/PatioCelulosaApp/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel"
+			},
+			{
+				"OnPress": "/PatioCelulosaApp/Actions/Recepcion/Recepcion_CreateEntity.action",
+				"Position": "Right",
+				"SystemItem": "Save"
+			}
+		]
+	},
+	"Caption": "Create Recepcion Detail",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "ruma",
+							"_Name": "ruma",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "sigla",
+							"_Name": "sigla",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "patente",
+							"_Name": "patente",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "producto",
+							"_Name": "producto",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "fecha",
+							"Caption": "fecha",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Caption": "pais",
+							"_Name": "pais",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "numGuia",
+							"_Name": "numGuia",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "giro",
+							"_Name": "giro",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "forestruck",
+							"_Name": "forestruck",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "produto",
+							"_Name": "produto",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "planta",
+							"_Name": "planta",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Recepcion_Create",
+	"PrefersLargeCaption": true
+}

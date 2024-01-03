@@ -1,0 +1,13 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"ActionResult": {
+		"_Name": "Descarga_UpdateEntity2"
+	},
+	"Target": {
+		"Service": "/PatioCelulosaApp/Services/PatioCelulosa_Destination.service",
+		"EntitySet": "Descarga"
+	},
+	"Properties": {
+		"ID": ""
+	}
+}

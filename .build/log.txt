@@ -1,0 +1,2 @@
+Pass:
+Generated bundle file /home/user/projects/PatioCelulosaApp/.build/PatioCelulosaApp/.build/uploadBundle.zip

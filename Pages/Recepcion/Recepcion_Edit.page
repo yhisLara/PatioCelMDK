@@ -1,0 +1,107 @@
+{
+	"Caption": "Update Recepcion Detail",
+	"DesignTimeTarget": {
+		"Service": "/PatioCelulosaApp/Services/PatioCelulosa_Destination.service",
+		"EntitySet": "Recepcion",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"OnPress": "/PatioCelulosaApp/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/PatioCelulosaApp/Actions/Recepcion/Recepcion_UpdateEntity.action"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "ruma",
+							"_Name": "ruma",
+							"Value": "{ruma}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "sigla",
+							"_Name": "sigla",
+							"Value": "{sigla}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "patente",
+							"_Name": "patente",
+							"Value": "{patente}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "producto",
+							"_Name": "producto",
+							"Value": "{producto}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "fecha",
+							"Value": "{fecha}",
+							"Caption": "fecha",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Caption": "pais",
+							"_Name": "pais",
+							"Value": "{pais}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "numGuia",
+							"_Name": "numGuia",
+							"Value": "{numGuia}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "giro",
+							"_Name": "giro",
+							"Value": "{giro}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "forestruck",
+							"_Name": "forestruck",
+							"Value": "{forestruck}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "produto",
+							"_Name": "produto",
+							"Value": "{produto}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "planta",
+							"_Name": "planta",
+							"Value": "{planta}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Recepcion_Edit",
+	"PrefersLargeCaption": true
+}

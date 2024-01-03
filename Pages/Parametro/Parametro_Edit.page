@@ -1,0 +1,70 @@
+{
+	"Caption": "Update Parametro Detail",
+	"DesignTimeTarget": {
+		"Service": "/PatioCelulosaApp/Services/PatioCelulosa_Destination.service",
+		"EntitySet": "Parametro",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"OnPress": "/PatioCelulosaApp/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/PatioCelulosaApp/Actions/Parametro/Parametro_UpdateEntity.action"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "param",
+							"_Name": "param",
+							"Value": "{param}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "valor",
+							"_Name": "valor",
+							"Value": "{valor}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "glosa",
+							"_Name": "glosa",
+							"Value": "{glosa}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "descripcion",
+							"_Name": "descripcion",
+							"Value": "{descripcion}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "vigente",
+							"Caption": "vigente",
+							"Value": "{vigente}",
+							"_Type": "Control.Type.FormCell.Switch"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Parametro_Edit",
+	"PrefersLargeCaption": true
+}

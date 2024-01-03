@@ -1,0 +1,27 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "Recepcion",
+        "Service": "/PatioCelulosaApp/Services/PatioCelulosa_Destination.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "ruma": "#Control:ruma/#Value",
+        "sigla": "#Control:sigla/#Value",
+        "patente": "#Control:patente/#Value",
+        "producto": "#Control:producto/#Value",
+        "fecha": "#Control:fecha/#Value",
+        "pais": "#Control:pais/#Value",
+        "numGuia": "#Control:numGuia/#Value",
+        "giro": "#Control:giro/#Value",
+        "forestruck": "#Control:forestruck/#Value",
+        "produto": "#Control:produto/#Value",
+        "planta": "#Control:planta/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/PatioCelulosaApp/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/PatioCelulosaApp/Actions/UpdateEntityFailureMessage.action"
+}

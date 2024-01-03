@@ -1,0 +1,10 @@
+{
+    "_Type": "Action.Type.OfflineOData.Close",
+    "Service": "/PatioCelulosaApp/Services/PatioCelulosa_Destination.service",
+    "Force": true,
+    "ActionResult": {
+        "_Name": "close"
+    },
+    "OnSuccess": "/PatioCelulosaApp/Actions/Service/CloseOfflineSuccessMessage.action",
+    "OnFailure": "/PatioCelulosaApp/Actions/Service/CloseOfflineFailureMessage.action"
+}

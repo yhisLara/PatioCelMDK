@@ -1,0 +1,73 @@
+{
+	"Caption": "Recepcion",
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/PatioCelulosaApp/Actions/Recepcion/NavToRecepcion_Create.action",
+				"Position": "Right",
+				"SystemItem": "Add"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Header": {
+						"UseTopPadding": false
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{createdBy}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"OnPress": "/PatioCelulosaApp/Actions/Recepcion/NavToRecepcion_Detail.action",
+						"StatusImage": "",
+						"Title": "{ID}",
+						"Footnote": "{modifiedAt}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{modifiedBy}",
+						"Subhead": "{createdAt}",
+						"SubstatusText": "{ruma}"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Search": {
+						"Enabled": true,
+						"Placeholder": "Item Search",
+						"BarcodeScanner": true,
+						"Delay": 500,
+						"MinimumCharacterThreshold": 3
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": true,
+						"LoadingIndicatorText": "Loading more items, please wait..."
+					},
+					"Target": {
+						"EntitySet": "Recepcion",
+						"Service": "/PatioCelulosaApp/Services/PatioCelulosa_Destination.service",
+						"QueryOptions": ""
+					},
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"LoadingIndicator": {
+				"Enabled": true,
+				"Text": "Loading, please wait..."
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Recepcion_List",
+	"PrefersLargeCaption": true
+}

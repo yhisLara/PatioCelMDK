@@ -1,0 +1,26 @@
+{
+    "CreateLinks": [],
+    "OnFailure": "/PatioCelulosaApp/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/PatioCelulosaApp/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "rumaAsignada": "#Control:rumaAsignada/#Value",
+        "rumaReal": "#Control:rumaReal/#Value",
+        "patenteCamion": "#Control:patenteCamion/#Value",
+        "sigla": "#Control:sigla/#Value",
+        "horaIniDescarga": "#Control:horaIniDescarga/#Value",
+        "horaFinDescarga": "#Control:horaFinDescarga/#Value",
+        "fecha": "#Control:fecha/#Value",
+        "patenteGrua": "#Control:patenteGrua/#Value",
+        "giro": "#Control:giro/#Value",
+        "producto": "#Control:producto/#Value",
+        "estado": "#Control:estado/#Value"
+    },
+    "Target": {
+        "EntitySet": "Descarga",
+        "Service": "/PatioCelulosaApp/Services/PatioCelulosa_Destination.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateEntity"
+}

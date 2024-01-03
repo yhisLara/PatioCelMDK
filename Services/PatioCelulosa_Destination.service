@@ -1,0 +1,12 @@
+{
+	"DestinationName": "PatioCelulosa_Destination",
+	"PathSuffix": "/odata/v4/catalog/",
+	"OfflineEnabled": true,
+	"OfflineOptions": {
+		"StoreParameters": {
+			"StoreName": "cel"
+		}
+	},
+	"SourceType": "Mobile",
+	"RestService": false
+}

@@ -1,0 +1,120 @@
+{
+	"Caption": "Descarga Detail",
+	"DesignTimeTarget": {
+		"Service": "/PatioCelulosaApp/Services/PatioCelulosa_Destination.service",
+		"EntitySet": "Descarga",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/PatioCelulosaApp/Actions/Descarga/NavToDescarga_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit"
+			},
+			{
+				"OnPress": "/PatioCelulosaApp/Rules/Descarga/Descarga_DeleteConfirmation.js",
+				"Position": "Right",
+				"SystemItem": "Trash"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{ID}",
+						"Subhead": "{createdAt}",
+						"BodyText": "",
+						"Footnote": "{modifiedAt}",
+						"Description": "{createdBy}",
+						"StatusText": "{modifiedBy}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{rumaAsignada}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "Created On",
+							"Value": "{createdAt}"
+						},
+						{
+							"KeyName": "Created By",
+							"Value": "{createdBy}"
+						},
+						{
+							"KeyName": "Changed On",
+							"Value": "{modifiedAt}"
+						},
+						{
+							"KeyName": "Changed By",
+							"Value": "{modifiedBy}"
+						},
+						{
+							"KeyName": "rumaAsignada",
+							"Value": "{rumaAsignada}"
+						},
+						{
+							"KeyName": "rumaReal",
+							"Value": "{rumaReal}"
+						},
+						{
+							"KeyName": "patenteCamion",
+							"Value": "{patenteCamion}"
+						},
+						{
+							"KeyName": "sigla",
+							"Value": "{sigla}"
+						},
+						{
+							"KeyName": "horaIniDescarga",
+							"Value": "{horaIniDescarga}"
+						},
+						{
+							"KeyName": "horaFinDescarga",
+							"Value": "{horaFinDescarga}"
+						},
+						{
+							"KeyName": "fecha",
+							"Value": "{fecha}"
+						},
+						{
+							"KeyName": "patenteGrua",
+							"Value": "{patenteGrua}"
+						},
+						{
+							"KeyName": "giro",
+							"Value": "{giro}"
+						},
+						{
+							"KeyName": "producto",
+							"Value": "{producto}"
+						},
+						{
+							"KeyName": "estado",
+							"Value": "{estado}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Descarga_Detail",
+	"PrefersLargeCaption": true
+}

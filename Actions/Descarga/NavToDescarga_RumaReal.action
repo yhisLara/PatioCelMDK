@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.Filter",
+	"ActionResult": {
+		"_Name": "NavToDescarga_RumaReal"
+	},
+	"Filterable": "#Page:Descarga_RumaReal/#Control:SectionedTable0",
+	"PageToOpen": "/PatioCelulosaApp/Pages/Descarga/Descarga_RumaReal.page",
+	"ModalPageFullscreen": true
+}

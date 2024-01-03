@@ -1,0 +1,155 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "rumaAsignada",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "rumaAsignada",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "rumaReal",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "rumaReal",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "patenteCamion",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "patenteCamion",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "sigla",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "sigla",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "horaIniDescarga",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "horaIniDescarga",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "horaFinDescarga",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "horaFinDescarga",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.DatePicker",
+							"_Name": "fecha",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "fecha",
+							"IsEditable": true,
+							"Mode": "Datetime"
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "patenteGrua",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "patenteGrua",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "giro",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "giro",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "producto",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "producto",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "estado",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "estado",
+							"Enabled": true,
+							"IsEditable": true
+						}
+					],
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Descarga_Create",
+	"Caption": "Create Descarga Detail",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "",
+				"SystemItem": "Cancel",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"OnPress": "/PatioCelulosaApp/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "",
+				"SystemItem": "Save",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"OnPress": "/PatioCelulosaApp/Actions/Descarga/Descarga_CreateEntity.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

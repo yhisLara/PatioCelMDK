@@ -1,0 +1,20 @@
+{
+    "CreateLinks": [],
+    "OnFailure": "/PatioCelulosaApp/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/PatioCelulosaApp/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "param": "#Control:param/#Value",
+        "valor": "#Control:valor/#Value",
+        "glosa": "#Control:glosa/#Value",
+        "descripcion": "#Control:descripcion/#Value",
+        "vigente": "#Control:vigente/#Value"
+    },
+    "Target": {
+        "EntitySet": "Parametro",
+        "Service": "/PatioCelulosaApp/Services/PatioCelulosa_Destination.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateEntity"
+}

@@ -1,0 +1,5 @@
+{
+    "ModalPage": true,
+    "PageToOpen": "/PatioCelulosaApp/Pages/Application/UserActivityLog.page",
+    "_Type": "Action.Type.Navigation"
+}

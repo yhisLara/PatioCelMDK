@@ -1,0 +1,58 @@
+{
+	"Credential": "cf",
+	"Template": {
+		"Id": "@ext-mdkvsc-npm-dev/generator-mdk",
+		"Name": "CRUD",
+		"Version": "0.0.1"
+	},
+	"CF": {
+		"Target": "https://api.cf.us10-001.hana.ondemand.com",
+		"Organization": "fb84e5e7-b6ae-4820-92d3-8e7c9caf9640",
+		"Space": "416317cb-ab16-48ce-bb64-b2ccfff6e5ad",
+		"Deploy": {
+			"Description": "",
+			"WebClient": {
+				"Runtime": "production",
+				"URL": "https://mdk-webclient-runtime.cfapps.us10.hana.ondemand.com/runtime/"
+			},
+			"Destination": [
+				{
+					"CF": "PatioCelulosa_Destination",
+					"MDK": "PatioCelulosa_Destination",
+					"URL": ""
+				}
+			],
+			"Name": "ns.PatioCelulosaApp",
+			"Version": "1.0.0",
+			"AppRouter": "standalone",
+			"Auth": true,
+			"URL": "https://794171ectrial-dev2-nspatiocelulosaapp-approuter.cfapps.us10-001.hana.ondemand.com/nsPatioCelulosaApp"
+		}
+	},
+	"MobileService": {
+		"Type": "standard",
+		"AdminAPI": "https://mobile-service-cockpit-api.cfapps.us10.hana.ondemand.com/cockpit/v1/org/fb84e5e7-b6ae-4820-92d3-8e7c9caf9640/space/416317cb-ab16-48ce-bb64-b2ccfff6e5ad",
+		"AppId": "PatioCelulosaMobile",
+		"Destination": [
+			"PatioCelulosa_Destination"
+		]
+	},
+	"Onboarding": {
+		"Schema": "sapmobilesvcs",
+		"TimeZone": "UTC",
+		"URL": "sapmobilesvcs://?AppId=PatioCelulosaMobile&ClientId=410306f4-5048-4e2c-8ac5-248f5427f469&ServerUrl=https://794171ectrial-dev2-patiocelulosamobile.cfapps.us10-001.hana.ondemand.com&SapCloudPlatformEndpoint=https://794171ectrial-dev2-patiocelulosamobile.cfapps.us10-001.hana.ondemand.com&AuthorizationEndpointUrl=https://794171ectrial-dev2-patiocelulosamobile.cfapps.us10-001.hana.ondemand.com/oauth2/api/v1/authorize&RedirectUrl=https://794171ectrial-dev2-patiocelulosamobile.cfapps.us10-001.hana.ondemand.com&TokenUrl=https://794171ectrial-dev2-patiocelulosamobile.cfapps.us10-001.hana.ondemand.com/oauth2/api/v1/token&multiUser=false"
+	},
+	"LCAP": {
+		"FullName": "",
+		"Service": [],
+		"sourceTemplate": {
+			"id": "html5moduletemplates.basicSAPUI5ApplicationProjectModule",
+			"version": "1.40.12"
+		}
+	},
+	"Build": {
+		"SourceMap": false,
+		"TSTarget": "es6",
+		"WMF": true
+	}
+}

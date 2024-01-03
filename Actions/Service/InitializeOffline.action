@@ -1,0 +1,24 @@
+{
+    "Service": "/PatioCelulosaApp/Services/PatioCelulosa_Destination.service",
+    "DefiningRequests": [{
+            "Name": "Descarga",
+            "Query": "Descarga"
+        },
+        {
+            "Name": "Parametro",
+            "Query": "Parametro"
+        },
+        {
+            "Name": "Recepcion",
+            "Query": "Recepcion"
+        }
+    ],
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "ActivityIndicatorText": "Downloading...",
+    "ActionResult": {
+        "_Name": "init"
+    },
+    "OnSuccess": "/PatioCelulosaApp/Actions/Service/InitializeOfflineSuccessMessage.action",
+    "OnFailure": "/PatioCelulosaApp/Actions/Service/InitializeOfflineFailureMessage.action"
+}

@@ -1,0 +1,22 @@
+{
+    "Service": "/PatioCelulosaApp/Services/PatioCelulosa_Destination.service",
+    "DefiningRequests": [{
+            "Name": "Descarga",
+            "Query": "Descarga"
+        },
+        {
+            "Name": "Parametro",
+            "Query": "Parametro"
+        },
+        {
+            "Name": "Recepcion",
+            "Query": "Recepcion"
+        }
+    ],
+    "_Type": "Action.Type.OfflineOData.Download",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnFailure": "/PatioCelulosaApp/Actions/Service/SyncFailureMessage.action",
+    "OnSuccess": "/PatioCelulosaApp/Rules/ErrorArchive/ErrorArchive_CheckForSyncError.js"
+}

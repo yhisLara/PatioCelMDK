@@ -1,0 +1,13 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"ActionResult": {
+		"_Name": "updateDescarga"
+	},
+	"OnFailure": "/PatioCelulosaApp/Actions/UpdateEntityFailureMessage.action",
+	"OnSuccess": "/PatioCelulosaApp/Actions/UpdateEntitySuccessMessage.action",
+	"Target": {
+		"EntitySet": "Descarga",
+		"Service": "/PatioCelulosaApp/Services/PatioCelulosa_Destination.service",
+		"ReadLink": "{@odata.readLink}"
+	}
+}

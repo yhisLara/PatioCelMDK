@@ -1,0 +1,31 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.BottomNavigation",
+			"_Name": "BottomNavigation0",
+			"Items": [
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Descarga",
+					"PageToOpen": "/PatioCelulosaApp/Pages/Descarga/Descarga_List2.page",
+					"_Name": "TabItem0"
+				},
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Carga",
+					"PageToOpen": "/PatioCelulosaApp/Pages/Descarga/Descarga_List2.page",
+					"_Name": "TabItem1"
+				},
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Configuración",
+					"PageToOpen": "/PatioCelulosaApp/Pages/Main.page",
+					"_Name": "TabItem2"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "MainButtonNavigation",
+	"Caption": "Demo Patio celulosa"
+}

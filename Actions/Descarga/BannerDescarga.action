@@ -1,0 +1,13 @@
+{
+	"_Type": "Action.Type.BannerMessage",
+	"ActionResult": {
+		"_Name": "BannerDescarga"
+	},
+	"ShowActivityIndicator": true,
+	"Message": "Descargando..",
+	"Duration": 15,
+	"Animated": true,
+	"ActionLabel": "Finalizar",
+	"OnActionLabelPress": "/PatioCelulosaApp/Rules/Descarga/FinDescarga.js",
+	"DismissBannerOnAction": false
+}

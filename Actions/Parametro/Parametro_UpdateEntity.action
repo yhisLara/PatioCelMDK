@@ -1,0 +1,21 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "Parametro",
+        "Service": "/PatioCelulosaApp/Services/PatioCelulosa_Destination.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "param": "#Control:param/#Value",
+        "valor": "#Control:valor/#Value",
+        "glosa": "#Control:glosa/#Value",
+        "descripcion": "#Control:descripcion/#Value",
+        "vigente": "#Control:vigente/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/PatioCelulosaApp/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/PatioCelulosaApp/Actions/UpdateEntityFailureMessage.action"
+}

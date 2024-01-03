@@ -1,0 +1,6 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"PageToOpen": "/PatioCelulosaApp/Pages/Descarga/Descarga_Detail2.page",
+	"BackStackVisible": false,
+	"ModalPage": false
+}

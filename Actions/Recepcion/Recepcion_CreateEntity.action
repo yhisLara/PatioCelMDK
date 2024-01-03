@@ -1,0 +1,26 @@
+{
+    "CreateLinks": [],
+    "OnFailure": "/PatioCelulosaApp/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/PatioCelulosaApp/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "ruma": "#Control:ruma/#Value",
+        "sigla": "#Control:sigla/#Value",
+        "patente": "#Control:patente/#Value",
+        "producto": "#Control:producto/#Value",
+        "fecha": "#Control:fecha/#Value",
+        "pais": "#Control:pais/#Value",
+        "numGuia": "#Control:numGuia/#Value",
+        "giro": "#Control:giro/#Value",
+        "forestruck": "#Control:forestruck/#Value",
+        "produto": "#Control:produto/#Value",
+        "planta": "#Control:planta/#Value"
+    },
+    "Target": {
+        "EntitySet": "Recepcion",
+        "Service": "/PatioCelulosaApp/Services/PatioCelulosa_Destination.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateEntity"
+}

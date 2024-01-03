@@ -1,0 +1,232 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/PatioCelulosaApp/Services/PatioCelulosa_Destination.service",
+		"EntitySet": "Descarga",
+		"QueryOptions": ""
+	},
+	"Controls": [
+		{
+			"DataSubscriptions": [],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": false,
+						"HeaderSeparator": false,
+						"FooterSeparator": false,
+						"ControlSeparator": true
+					},
+					"KeyAndValues": [
+						{
+							"Value": "{patenteCamion}",
+							"_Name": "patente",
+							"KeyName": "Patente Camión",
+							"Visible": true
+						},
+						{
+							"Value": "{sigla}",
+							"_Name": "sigla",
+							"KeyName": "Sigla",
+							"Visible": true
+						},
+						{
+							"Value": "{rumaAsignada}",
+							"_Name": "rumaAsignada",
+							"KeyName": "Ruma asignada",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue1",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 3
+					}
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.Sorter",
+							"_Name": "rumaReal",
+							"IsVisible": true,
+							"Separator": true,
+							"AllowEmptySelection": true,
+							"Caption": "Ruma real asignada",
+							"Label": "{rumaReal}",
+							"IsEditable": true,
+							"SortByItems": [
+								{
+									"DisplayValue": "Ruma 1",
+									"ReturnValue": "1"
+								},
+								{
+									"DisplayValue": "Ruma 2",
+									"ReturnValue": "2"
+								},
+								{
+									"DisplayValue": "Ruma 3",
+									"ReturnValue": "3"
+								},
+								{
+									"DisplayValue": "Ruma 4",
+									"ReturnValue": "4"
+								},
+								{
+									"DisplayValue": "Ruma 5",
+									"ReturnValue": "5"
+								},
+								{
+									"DisplayValue": "Ruma 6",
+									"ReturnValue": "6"
+								},
+								{
+									"DisplayValue": "Ruma 7",
+									"ReturnValue": "7"
+								},
+								{
+									"DisplayValue": "Ruma 8",
+									"ReturnValue": "8"
+								}
+							]
+						},
+						{
+							"Value": "{rumaReal}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "rumaRealAsignada",
+							"IsVisible": false,
+							"Separator": true,
+							"Caption": "Ruma real asignada",
+							"Enabled": true,
+							"IsEditable": false
+						},
+						{
+							"Value": "{producto}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty0",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Producto",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true,
+							"IsEditable": false
+						},
+						{
+							"Value": "{estado}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "estado",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Estado",
+							"Enabled": true,
+							"IsEditable": false
+						},
+						{
+							"Value": "{horaIniDescarga}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "horaIni",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Hora inicio descarga",
+							"Enabled": true,
+							"IsEditable": false
+						},
+						{
+							"Value": "{horaFinDescarga}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "horaFin",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Hora fin descarga",
+							"Enabled": true,
+							"IsEditable": false
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell2"
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "ButtonIni",
+							"IsVisible": true,
+							"Separator": true,
+							"Title": "Iniciar Descarga",
+							"Alignment": "Center",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"ImagePosition": "Leading",
+							"Enabled": true,
+							"OnPress": "/PatioCelulosaApp/Rules/Descarga/InicioDescarga.js"
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "ButtonFin",
+							"IsVisible": false,
+							"Separator": true,
+							"Title": "Fin Descarga",
+							"Alignment": "Center",
+							"ButtonType": "Primary",
+							"Semantic": "Negative",
+							"ImagePosition": "Leading",
+							"Enabled": true,
+							"OnPress": "/PatioCelulosaApp/Rules/Descarga/FinDescarga.js"
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "ButtonCancelar",
+							"IsVisible": false,
+							"Separator": true,
+							"Title": "Cancelar descarga",
+							"Alignment": "Center",
+							"ButtonType": "Secondary",
+							"Semantic": "Normal",
+							"ImagePosition": "Leading",
+							"Enabled": true,
+							"OnPress": "/PatioCelulosaApp/Rules/Descarga/CancelarDescarga.js"
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell1"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "DetalleRecepcion",
+	"Caption": "Detalle",
+	"PrefersLargeCaption": true,
+	"OnLoaded": "/PatioCelulosaApp/Rules/Descarga/onLoadedPage.js"
+}

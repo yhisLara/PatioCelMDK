@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/PatioCelulosaApp/Pages/Parametro/Parametro_Create.page",
+    "_Type": "Action.Type.Navigation"
+}

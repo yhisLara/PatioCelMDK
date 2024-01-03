@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/PatioCelulosaApp/Pages/Descarga/Descarga_Create.page",
+    "_Type": "Action.Type.Navigation"
+}

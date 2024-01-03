@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/PatioCelulosaApp/Pages/Recepcion/Recepcion_Create.page",
+    "_Type": "Action.Type.Navigation"
+}

@@ -1,0 +1,9 @@
+{
+    "Service": "/PatioCelulosaApp/Services/PatioCelulosa_Destination.service",
+    "_Type": "Action.Type.OfflineOData.Upload",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnSuccess": "/PatioCelulosaApp/Actions/Service/DownloadStartedMessage.action",
+    "OnFailure": "/PatioCelulosaApp/Actions/Service/SyncFailureMessage.action"
+}
