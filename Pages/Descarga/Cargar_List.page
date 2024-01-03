@@ -1,6 +1,10 @@
 {
 	"Controls": [
 		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
 			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable",
 			"Sections": [
@@ -10,18 +14,6 @@
 						"AccessoryType": "None",
 						"UseTopPadding": false
 					},
-					"_Type": "Section.Type.ObjectTable",
-					"Target": {
-						"Service": "/PatioCelulosaApp/Services/PatioCelulosa_Destination.service",
-						"EntitySet": "Descarga",
-						"QueryOptions": "$filter=estado eq 'CARGAR'"
-					},
-					"_Name": "SectionObjectTable0",
-					"Visible": true,
-					"EmptySection": {
-						"Caption": "No record found!",
-						"FooterVisible": false
-					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -29,16 +21,40 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/PatioCelulosaApp/Services/PatioCelulosa_Destination.service",
+						"EntitySet": "Descarga",
+						"QueryOptions": "$filter=giro eq 'CARGAR'&$orderby=estado desc"
+					},
+					"_Name": "ObjectCell",
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "No record found!",
+						"FooterVisible": false
+					},
 					"ObjectCell": {
-						"Title": "{ID}",
-						"Subhead": "{createdAt}",
-						"Footnote": "{modifiedAt}",
-						"Description": "{createdBy}",
-						"StatusText": "{modifiedBy}",
-						"SubstatusText": "{rumaAsignada}",
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": []
+						},
+						"Title": "Patente camión :  {patenteCamion}",
+						"Subhead": "Sigla : {sigla}",
+						"SubstatusText": "Producto : {producto}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "DisclosureIndicator",
-						"Tags": [],
+						"Tags": [
+							{
+								"Color": "Blue",
+								"Text": "Ruma asignada : {rumaAsignada}"
+							},
+							{
+								"Color": "/PatioCelulosaApp/Rules/Descarga/TagColor.js",
+								"Text": "Estado : {estado}"
+							}
+						],
 						"AvatarStack": {
 							"Avatars": [
 								{
@@ -52,13 +68,7 @@
 							"ImageIsCircular": true
 						},
 						"OnPress": "/PatioCelulosaApp/Actions/Descarga/NavToDescarga_Detail.action",
-						"Selected": false,
-						"ContextMenu": {
-							"Items": [],
-							"PerformFirstActionWithFullSwipe": true,
-							"LeadingItems": [],
-							"TrailingItems": []
-						}
+						"Selected": false
 					},
 					"Search": {
 						"Enabled": true,
@@ -77,17 +87,18 @@
 			"LoadingIndicator": {
 				"Enabled": true,
 				"Text": "Loading, please wait..."
-			},
-			"FilterFeedbackBar": {
-				"ShowAllFilters": false,
-				"_Type": "Control.Type.FilterFeedbackBar"
 			}
 		}
 	],
+	"DesignTimeTarget": {
+		"Service": "/PatioCelulosaApp/Services/PatioCelulosa_Destination.service",
+		"EntitySet": "Descarga"
+	},
 	"_Type": "Page",
-	"_Name": "Descarga_List",
-	"Caption": "Carga camiones",
+	"_Name": "Recepcion_List",
+	"Caption": "Grúa : GLX-30",
 	"PrefersLargeCaption": true,
+	"OnLoaded": "/PatioCelulosaApp/Rules/Descarga/TagColor.js",
 	"ActionBar": {
 		"Items": [
 			{
